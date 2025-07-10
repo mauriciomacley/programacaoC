@@ -1,59 +1,38 @@
- Super Trunfo de Cidades – Nível Mestre (Linguagem C)
+ Super Trunfo – Países (Nível Mestre)
 
-Este projeto é o resultado do desafio proposto na disciplina de Programação em C da Estácio.  
-No **nível mestre**, o objetivo foi criar um sistema completo de **cadastro**, **cálculo** e **batalha de cartas** entre cidades no estilo Super Trunfo.
-
----
-
-##  Funcionalidades Implementadas
-
- Cadastro de duas cartas contendo:
-- Estado (char)
-- Código da Carta (string)
-- Nome da Cidade (string com espaços)
-- População (`unsigned long int`)
-- Área (`float`)
-- PIB em bilhões (`float`)
-- Número de pontos turísticos (`int`)
-
- Cálculos automáticos:
-- **Densidade Populacional** = população / área
-- **PIB per Capita** = (PIB * 1 bilhão) / população
-- **Super Poder** = soma de:
-  - população
-  - área
-  - PIB (convertido para reais)
-  - pontos turísticos
-  - PIB per capita
-  - **1 dividido pela densidade populacional** (quanto menor a densidade, maior o poder)
-
- Comparações entre os atributos das duas cartas:
-- Quem vence em:
-  - População
-  - Área
-  - PIB
-  - Pontos turísticos
-  - PIB per capita
-  - **Densidade populacional (menor vence)**
-  - Super Poder
-- Resultado impresso: `1` (Carta 1 venceu) ou `0` (Carta 2 venceu)
+Este projeto foi desenvolvido para o desafio **Super Trunfo – Países**, no nível **Mestre**, 
+da disciplina de Linguagem de Programação em C. O programa simula uma rodada de Super Trunfo entre duas cartas de cidades, 
+comparando dois atributos diferentes escolhidos pelo jogador e determinando a carta vencedora ou o empate.
 
 ---
 
-##  Restrições Atendidas
+ Funcionalidades 
 
-- ❌ Sem uso de estruturas de repetição (`for`, `while`)
-- ❌ Sem uso de estruturas de decisão (`if`, `else`)
--  Utilização apenas da biblioteca padrão `<stdio.h>`
--  Código formatado, legível, organizado e comentado
--  Operações com **conversão correta de tipos** (inteiros e floats)
+- Cadastro manual de duas cartas com dados de cidades.
+- Cálculo automático de:
+  - **Densidade populacional** (população ÷ área)
+  - **PIB per capita** (PIB ÷ população)
+- Menu interativo dinâmico com `switch` para escolha de **dois atributos distintos**.
+- Comparação dos dois atributos com:
+  - **Maior valor vence**, exceto para densidade populacional (**menor vence**).
+- Cálculo da soma dos dois atributos escolhidos por carta.
+- Determinação da carta vencedora com base na soma.
+- **Tratamento de empates**.
+- Mensagens claras e organizadas.
+- **Tratamento de entradas inválidas** com mensagens e encerramento seguro.
 
 ---
 
-**Aluno:** Mauricio Castro  
-- **Curso:** Redes de Computadores  
-- **Faculdade:** Estácio  
-- **Desafio:** Nível Mestre – Programação em C
+Atributos Disponíveis para Comparação
+
+1. População  
+2. Área (em km²)  
+3. PIB (em trilhões de reais)  
+4. Número de Pontos Turísticos  
+5. Densidade Populacional  
+6. PIB per Capita
+
+
 
 
 
